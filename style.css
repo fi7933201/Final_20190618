@@ -1,0 +1,373 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap");
+* {
+  position: relative;
+  text-align: center;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 75px;
+}
+
+body {
+  background-color: #C9C0D3;
+  box-sizing: border-box;
+  border-top: solid 30px #B5C1B4;
+  border-bottom: solid 30px #B5C1B4;
+  overflow: hidden;
+}
+
+.Top {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: #B5C1B4;
+  color: #3F3232;
+  border-radius: 30px 30px 225px 30px;
+  margin-top: -100px;
+  margin-left: -75px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+.Top h3 {
+  margin-left: 80px;
+  margin-top: 125px;
+  font-size: 50px;
+  width: 100px;
+  line-height: 50px;
+}
+.Top h3 span {
+  color: #74593D;
+  font-size: 30px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  padding: 0px 20px 30px 20px;
+  overflow: hidden;
+  background-color: #B5C1B4;
+  color: #3F3232;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 20px 25px 15px -15px rgba(0, 0, 0, 0.15);
+  border-radius: 3ex;
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+}
+.namecard hr {
+  border-color: #DCD9C6;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.namecard h2 {
+  font-size: 25px;
+}
+.namecard span {
+  font-size: 18px;
+}
+.namecard h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.namecard p {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 20px;
+}
+
+.namecard:hover {
+  background-color: #3F3232;
+  -webkit-transform: translate(-100px, -100px);
+          transform: translate(-100px, -100px);
+  box-shadow: -20px -25px 15px -15px rgba(0, 0, 0, 0.5);
+  color: #DCD9C6;
+}
+.namecard:hover hr {
+  border-color: #DCD9C6;
+}
+
+@-webkit-keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+.Top {
+  -webkit-animation-name: title;
+          animation-name: title;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes bg {
+  0%, 50% {
+    background: #DCD9C6;
+  }
+  50.00001%, 100% {
+    background: #74593D;
+  }
+}
+
+@keyframes bg {
+  0%, 50% {
+    background: #DCD9C6;
+  }
+  50.00001%, 100% {
+    background: #74593D;
+  }
+}
+.trans {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: bg 3s infinite;
+          animation: bg 3s infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes moveHorizontal {
+  0% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 1em, 3em 1em, 5em 1em, 7em 1em, 9em 1em, 11em 1em, 13em 1em, 15em 1em, 17em 1em, 19em 1em, 21em 1em, 1em 3em, 3em 3em, 5em 3em, 7em 3em, 9em 3em, 11em 3em, 13em 3em, 15em 3em, 17em 3em, 19em 3em, 21em 3em, 1em 5em, 3em 5em, 5em 5em, 7em 5em, 9em 5em, 11em 5em, 13em 5em, 15em 5em, 17em 5em, 19em 5em, 21em 5em, 1em 7em, 3em 7em, 5em 7em, 7em 7em, 9em 7em, 11em 7em, 13em 7em, 15em 7em, 17em 7em, 19em 7em, 21em 7em, 1em 9em, 3em 9em, 5em 9em, 7em 9em, 9em 9em, 11em 9em, 13em 9em, 15em 9em, 17em 9em, 19em 9em, 21em 9em,              0em 2em, 2em 2em, 4em 2em, 6em 2em, 8em 2em, 10em 2em, 12em 2em, 14em 2em, 16em 2em, 18em 2em, 20em 2em, 0em 4em, 2em 4em, 4em 4em, 6em 4em, 8em 4em, 10em 4em, 12em 4em, 14em 4em, 16em 4em, 18em 4em, 20em 4em, 0em 6em, 2em 6em, 4em 6em, 6em 6em, 8em 6em, 10em 6em, 12em 6em, 14em 6em, 16em 6em, 18em 6em, 20em 6em, 0em 8em, 2em 8em, 4em 8em, 6em 8em, 8em 8em, 10em 8em, 12em 8em, 14em 8em, 16em 8em, 18em 8em, 20em 8em;
+  }
+  14% {
+    border-radius: 50%;
+    box-shadow: -0.5em -0.5em, 2.5em -0.5em, 5.5em -0.5em, 8.5em -0.5em, 11.5em -0.5em, 14.5em -0.5em, 17.5em -0.5em, 20.5em -0.5em, 23.5em -0.5em, 26.5em -0.5em, 29.5em -0.5em, -0.5em 2.5em, 2.5em 2.5em, 5.5em 2.5em, 8.5em 2.5em, 11.5em 2.5em, 14.5em 2.5em, 17.5em 2.5em, 20.5em 2.5em, 23.5em 2.5em, 26.5em 2.5em, 29.5em 2.5em, -0.5em 5.5em, 2.5em 5.5em, 5.5em 5.5em, 8.5em 5.5em, 11.5em 5.5em, 14.5em 5.5em, 17.5em 5.5em, 20.5em 5.5em, 23.5em 5.5em, 26.5em 5.5em, 29.5em 5.5em, -0.5em 8.5em, 2.5em 8.5em, 5.5em 8.5em, 8.5em 8.5em, 11.5em 8.5em, 14.5em 8.5em, 17.5em 8.5em, 20.5em 8.5em, 23.5em 8.5em, 26.5em 8.5em, 29.5em 8.5em, -0.5em 11.5em, 2.5em 11.5em, 5.5em 11.5em, 8.5em 11.5em, 11.5em 11.5em, 14.5em 11.5em, 17.5em 11.5em, 20.5em 11.5em, 23.5em 11.5em, 26.5em 11.5em, 29.5em 11.5em,                -2em 1em, 1em 1em, 4em 1em, 7em 1em, 10em 1em, 13em 1em, 16em 1em, 19em 1em, 22em 1em, 25em 1em, 28em 1em, -2em 4em, 1em 4em, 4em 4em, 7em 4em, 10em 4em, 13em 4em, 16em 4em, 19em 4em, 22em 4em, 25em 4em, 28em 4em, -2em 7em, 1em 7em, 4em 7em, 7em 7em, 10em 7em, 13em 7em, 16em 7em, 19em 7em, 22em 7em, 25em 7em, 28em 7em, -2em 10em, 1em 10em, 4em 10em, 7em 10em, 10em 10em, 13em 10em, 16em 10em, 19em 10em, 22em 10em, 25em 10em, 28em 10em;
+  }
+  27.5% {
+    border-radius: 50%;
+    box-shadow: -2em -0.5em, 1em -0.5em, 4em -0.5em, 7em -0.5em, 10em -0.5em, 13em -0.5em, 16em -0.5em, 19em -0.5em, 22em -0.5em, 25em -0.5em, 28em -0.5em, -2em 2.5em, 1em 2.5em, 4em 2.5em, 7em 2.5em, 10em 2.5em, 13em 2.5em, 16em 2.5em, 19em 2.5em, 22em 2.5em, 25em 2.5em, 28em 2.5em, -2em 5.5em, 1em 5.5em, 4em 5.5em, 7em 5.5em, 10em 5.5em, 13em 5.5em, 16em 5.5em, 19em 5.5em, 22em 5.5em, 25em 5.5em, 28em 5.5em, -2em 8.5em, 1em 8.5em, 4em 8.5em, 7em 8.5em, 10em 8.5em, 13em 8.5em, 16em 8.5em, 19em 8.5em, 22em 8.5em, 25em 8.5em, 28em 8.5em, -2em 11.5em, 1em 11.5em, 4em 11.5em, 7em 11.5em, 10em 11.5em, 13em 11.5em, 16em 11.5em, 19em 11.5em, 22em 11.5em, 25em 11.5em, 28em 11.5em,                 -0.5em 1em, 2.5em 1em, 5.5em 1em, 8.5em 1em, 11.5em 1em, 14.5em 1em, 17.5em 1em, 20.5em 1em, 23.5em 1em, 26.5em 1em, 29.5em 1em, -0.5em 4em, 2.5em 4em, 5.5em 4em, 8.5em 4em, 11.5em 4em, 14.5em 4em, 17.5em 4em, 20.5em 4em, 23.5em 4em, 26.5em 4em, 29.5em 4em, -0.5em 7em, 2.5em 7em, 5.5em 7em, 8.5em 7em, 11.5em 7em, 14.5em 7em, 17.5em 7em, 20.5em 7em, 23.5em 7em, 26.5em 7em, 29.5em 7em, -0.5em 11em, 2.5em 11em, 5.5em 11em, 8.5em 11em, 11.5em 11em, 14.5em 11em, 17.5em 11em, 20.5em 11em, 23.5em 11em, 26.5em 11em, 29.5em 11em;
+  }
+  40%, 50% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 0em 1em, 2em 1em, 4em 1em, 6em 1em, 8em 1em, 10em 1em, 12em 1em, 14em 1em, 16em 1em, 18em 1em, 20em 1em, 0em 3em, 2em 3em, 4em 3em, 6em 3em, 8em 3em, 10em 3em, 12em 3em, 14em 3em, 16em 3em, 18em 3em, 20em 3em, 0em 5em, 2em 5em, 4em 5em, 6em 5em, 8em 5em, 10em 5em, 12em 5em, 14em 5em, 16em 5em, 18em 5em, 20em 5em, 0em 7em, 2em 7em, 4em 7em, 6em 7em, 8em 7em, 10em 7em, 12em 7em, 14em 7em, 16em 7em, 18em 7em, 20em 7em, 0em 9em, 2em 9em, 4em 9em, 6em 9em, 8em 9em, 10em 9em, 12em 9em, 14em 9em, 16em 9em, 18em 9em, 20em 9em,                 1em 2em, 3em 2em, 5em 2em, 7em 2em, 9em 2em, 11em 2em, 13em 2em, 15em 2em, 17em 2em, 19em 2em, 21em 2em, 1em 4em, 3em 4em, 5em 4em, 7em 4em, 9em 4em, 11em 4em, 13em 4em, 15em 4em, 17em 4em, 19em 4em, 21em 4em, 1em 6em, 3em 6em, 5em 6em, 7em 6em, 9em 6em, 11em 6em, 13em 6em, 15em 6em, 17em 6em, 19em 6em, 21em 6em, 1em 8em, 3em 8em, 5em 8em, 7em 8em, 9em 8em, 11em 8em, 13em 8em, 15em 8em, 17em 8em, 19em 8em, 21em 8em;
+  }
+  50.00001%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 1em, 3em 1em, 5em 1em, 7em 1em, 9em 1em, 11em 1em, 13em 1em, 15em 1em, 17em 1em, 19em 1em, 21em 1em, 1em 3em, 3em 3em, 5em 3em, 7em 3em, 9em 3em, 11em 3em, 13em 3em, 15em 3em, 17em 3em, 19em 3em, 21em 3em, 1em 5em, 3em 5em, 5em 5em, 7em 5em, 9em 5em, 11em 5em, 13em 5em, 15em 5em, 17em 5em, 19em 5em, 21em 5em, 1em 7em, 3em 7em, 5em 7em, 7em 7em, 9em 7em, 11em 7em, 13em 7em, 15em 7em, 17em 7em, 19em 7em, 21em 7em, 1em 9em, 3em 9em, 5em 9em, 7em 9em, 9em 9em, 11em 9em, 13em 9em, 15em 9em, 17em 9em, 19em 9em, 21em 9em,              0em 2em, 2em 2em, 4em 2em, 6em 2em, 8em 2em, 10em 2em, 12em 2em, 14em 2em, 16em 2em, 18em 2em, 20em 2em, 0em 4em, 2em 4em, 4em 4em, 6em 4em, 8em 4em, 10em 4em, 12em 4em, 14em 4em, 16em 4em, 18em 4em, 20em 4em, 0em 6em, 2em 6em, 4em 6em, 6em 6em, 8em 6em, 10em 6em, 12em 6em, 14em 6em, 16em 6em, 18em 6em, 20em 6em, 0em 8em, 2em 8em, 4em 8em, 6em 8em, 8em 8em, 10em 8em, 12em 8em, 14em 8em, 16em 8em, 18em 8em, 20em 8em;
+  }
+  14% {
+    border-radius: 50%;
+    box-shadow: -0.5em -0.5em, 2.5em -0.5em, 5.5em -0.5em, 8.5em -0.5em, 11.5em -0.5em, 14.5em -0.5em, 17.5em -0.5em, 20.5em -0.5em, 23.5em -0.5em, 26.5em -0.5em, 29.5em -0.5em, -0.5em 2.5em, 2.5em 2.5em, 5.5em 2.5em, 8.5em 2.5em, 11.5em 2.5em, 14.5em 2.5em, 17.5em 2.5em, 20.5em 2.5em, 23.5em 2.5em, 26.5em 2.5em, 29.5em 2.5em, -0.5em 5.5em, 2.5em 5.5em, 5.5em 5.5em, 8.5em 5.5em, 11.5em 5.5em, 14.5em 5.5em, 17.5em 5.5em, 20.5em 5.5em, 23.5em 5.5em, 26.5em 5.5em, 29.5em 5.5em, -0.5em 8.5em, 2.5em 8.5em, 5.5em 8.5em, 8.5em 8.5em, 11.5em 8.5em, 14.5em 8.5em, 17.5em 8.5em, 20.5em 8.5em, 23.5em 8.5em, 26.5em 8.5em, 29.5em 8.5em, -0.5em 11.5em, 2.5em 11.5em, 5.5em 11.5em, 8.5em 11.5em, 11.5em 11.5em, 14.5em 11.5em, 17.5em 11.5em, 20.5em 11.5em, 23.5em 11.5em, 26.5em 11.5em, 29.5em 11.5em,                -2em 1em, 1em 1em, 4em 1em, 7em 1em, 10em 1em, 13em 1em, 16em 1em, 19em 1em, 22em 1em, 25em 1em, 28em 1em, -2em 4em, 1em 4em, 4em 4em, 7em 4em, 10em 4em, 13em 4em, 16em 4em, 19em 4em, 22em 4em, 25em 4em, 28em 4em, -2em 7em, 1em 7em, 4em 7em, 7em 7em, 10em 7em, 13em 7em, 16em 7em, 19em 7em, 22em 7em, 25em 7em, 28em 7em, -2em 10em, 1em 10em, 4em 10em, 7em 10em, 10em 10em, 13em 10em, 16em 10em, 19em 10em, 22em 10em, 25em 10em, 28em 10em;
+  }
+  27.5% {
+    border-radius: 50%;
+    box-shadow: -2em -0.5em, 1em -0.5em, 4em -0.5em, 7em -0.5em, 10em -0.5em, 13em -0.5em, 16em -0.5em, 19em -0.5em, 22em -0.5em, 25em -0.5em, 28em -0.5em, -2em 2.5em, 1em 2.5em, 4em 2.5em, 7em 2.5em, 10em 2.5em, 13em 2.5em, 16em 2.5em, 19em 2.5em, 22em 2.5em, 25em 2.5em, 28em 2.5em, -2em 5.5em, 1em 5.5em, 4em 5.5em, 7em 5.5em, 10em 5.5em, 13em 5.5em, 16em 5.5em, 19em 5.5em, 22em 5.5em, 25em 5.5em, 28em 5.5em, -2em 8.5em, 1em 8.5em, 4em 8.5em, 7em 8.5em, 10em 8.5em, 13em 8.5em, 16em 8.5em, 19em 8.5em, 22em 8.5em, 25em 8.5em, 28em 8.5em, -2em 11.5em, 1em 11.5em, 4em 11.5em, 7em 11.5em, 10em 11.5em, 13em 11.5em, 16em 11.5em, 19em 11.5em, 22em 11.5em, 25em 11.5em, 28em 11.5em,                 -0.5em 1em, 2.5em 1em, 5.5em 1em, 8.5em 1em, 11.5em 1em, 14.5em 1em, 17.5em 1em, 20.5em 1em, 23.5em 1em, 26.5em 1em, 29.5em 1em, -0.5em 4em, 2.5em 4em, 5.5em 4em, 8.5em 4em, 11.5em 4em, 14.5em 4em, 17.5em 4em, 20.5em 4em, 23.5em 4em, 26.5em 4em, 29.5em 4em, -0.5em 7em, 2.5em 7em, 5.5em 7em, 8.5em 7em, 11.5em 7em, 14.5em 7em, 17.5em 7em, 20.5em 7em, 23.5em 7em, 26.5em 7em, 29.5em 7em, -0.5em 11em, 2.5em 11em, 5.5em 11em, 8.5em 11em, 11.5em 11em, 14.5em 11em, 17.5em 11em, 20.5em 11em, 23.5em 11em, 26.5em 11em, 29.5em 11em;
+  }
+  40%, 50% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 0em 1em, 2em 1em, 4em 1em, 6em 1em, 8em 1em, 10em 1em, 12em 1em, 14em 1em, 16em 1em, 18em 1em, 20em 1em, 0em 3em, 2em 3em, 4em 3em, 6em 3em, 8em 3em, 10em 3em, 12em 3em, 14em 3em, 16em 3em, 18em 3em, 20em 3em, 0em 5em, 2em 5em, 4em 5em, 6em 5em, 8em 5em, 10em 5em, 12em 5em, 14em 5em, 16em 5em, 18em 5em, 20em 5em, 0em 7em, 2em 7em, 4em 7em, 6em 7em, 8em 7em, 10em 7em, 12em 7em, 14em 7em, 16em 7em, 18em 7em, 20em 7em, 0em 9em, 2em 9em, 4em 9em, 6em 9em, 8em 9em, 10em 9em, 12em 9em, 14em 9em, 16em 9em, 18em 9em, 20em 9em,                 1em 2em, 3em 2em, 5em 2em, 7em 2em, 9em 2em, 11em 2em, 13em 2em, 15em 2em, 17em 2em, 19em 2em, 21em 2em, 1em 4em, 3em 4em, 5em 4em, 7em 4em, 9em 4em, 11em 4em, 13em 4em, 15em 4em, 17em 4em, 19em 4em, 21em 4em, 1em 6em, 3em 6em, 5em 6em, 7em 6em, 9em 6em, 11em 6em, 13em 6em, 15em 6em, 17em 6em, 19em 6em, 21em 6em, 1em 8em, 3em 8em, 5em 8em, 7em 8em, 9em 8em, 11em 8em, 13em 8em, 15em 8em, 17em 8em, 19em 8em, 21em 8em;
+  }
+  50.00001%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes moveVertical {
+  0% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 1em, 3em 1em, 5em 1em, 7em 1em, 9em 1em, 11em 1em, 13em 1em, 15em 1em, 17em 1em, 19em 1em, 21em 1em, 1em 3em, 3em 3em, 5em 3em, 7em 3em, 9em 3em, 11em 3em, 13em 1em, 15em 3em, 17em 3em, 19em 3em, 21em 3em, 1em 5em, 3em 5em, 5em 5em, 7em 5em, 9em 5em, 11em 5em, 13em 5em, 15em 5em, 17em 5em, 19em 5em, 21em 5em, 1em 7em, 3em 7em, 5em 7em, 7em 7em, 9em 7em, 11em 7em, 13em 7em, 15em 7em, 17em 7em, 19em 7em, 21em 7em, 0em 0em, 2em 0em, 4em 0em, 6em 0em, 8em 0em, 10em 0em, 12em 0em, 14em 0em, 16em 0em, 18em 0em, 20em 0em, 22em 0em, 0em 2em, 2em 2em, 4em 2em, 6em 2em, 8em 2em, 10em 2em, 12em 2em, 14em 2em, 16em 2em, 18em 2em, 20em 2em, 22em 2em, 0em 4em, 2em 4em, 4em 4em, 6em 4em, 8em 4em, 10em 4em, 12em 4em, 14em 4em, 16em 4em, 18em 4em, 20em 4em, 22em 4em, 0em 6em, 2em 6em, 4em 6em, 6em 6em, 8em 6em, 10em 6em, 12em 6em, 14em 6em, 16em 6em, 18em 6em, 20em 6em, 22em 6em, 0em 8em, 2em 8em, 4em 8em, 6em 8em, 8em 8em, 10em 8em, 12em 8em, 14em 8em, 16em 8em, 18em 8em, 20em 8em, 22em 8em, 0em 10em, 2em 10em, 4em 10em, 6em 10em, 8em 10em, 10em 10em, 12em 10em, 14em 10em, 16em 10em, 18em 10em, 20em 10em, 22em 10em;
+  }
+  14% {
+    border-radius: 50%;
+    box-shadow: -0.5em -0.5em, 2.5em -0.5em, 5.5em -0.5em, 8.5em -0.5em, 11.5em -0.5em, 14.5em -0.5em, 17.5em -0.5em, 20.5em -0.5em, 23.5em -0.5em, 26.5em -0.5em, 29.5em -0.5em, -0.5em 2.5em, 2.5em 2.5em, 5.5em 2.5em, 8.5em 2.5em, 11.5em 2.5em, 14.5em 2.5em, 17.5em 2.5em, 20.5em 2.5em, 23.5em 2.5em, 26.5em 2.5em, 29.5em 2.5em, -0.5em 5.5em, 2.5em 5.5em, 5.5em 5.5em, 8.5em 5.5em, 11.5em 5.5em, 14.5em 5.5em, 17.5em 5.5em, 20.5em 5.5em, 23.5em 5.5em, 26.5em 5.5em, 29.5em 5.5em, -0.5em 8.5em, 2.5em 8.5em, 5.5em 8.5em, 8.5em 8.5em, 11.5em 8.5em, 14.5em 8.5em, 17.5em 8.5em, 20.5em 8.5em, 23.5em 8.5em, 26.5em 8.5em, 29.5em 8.5em,            -2em -2em, 1em -2em, 4em -2em, 7em -2em, 10em -2em, 13em -2em, 16em -2em, 19em -2em, 22em -2em, 25em -2em, 28em -2em, 31em -2em, -2em 1em, 1em 1em, 4em 1em, 7em 1em, 10em 1em, 13em 1em, 16em 1em, 19em 1em, 22em 1em, 25em 1em, 28em 1em, 31em 1em, -2em 4em, 1em 4em, 4em 4em, 7em 4em, 10em 4em, 13em 4em, 16em 4em, 19em 4em, 22em 4em, 25em 4em, 28em 4em, 31em 4em, -2em 7em, 1em 7em, 4em 7em, 7em 7em, 10em 7em, 13em 7em, 16em 7em, 19em 7em, 22em 7em, 25em 7em, 28em 7em, 31em 7em, -2em 10em, 1em 10em, 4em 10em, 7em 10em, 10em 10em, 13em 10em, 16em 10em, 19em 10em, 22em 10em, 25em 10em, 28em 10em, 31em 10em, -2em 13em, 1em 13em, 4em 13em, 7em 13em, 10em 13em, 13em 13em, 16em 13em, 19em 13em, 22em 13em, 25em 13em, 28em 13em, 31em 13em;
+  }
+  27.5% {
+    border-radius: 50%;
+    box-shadow: -0.5em 1em, 2.5em 1em, 5.5em 1em, 8.5em 1em, 11.5em 1em, 14.5em 1em, 17.5em 1em, 20.5em 1em, 23.5em 1em, 26.5em 1em, 29.5em 1em, -0.5em 4em, 2.5em 4em, 5.5em 4em, 8.5em 4em, 11.5em 4em, 14.5em 4em, 17.5em 4em, 20.5em 4em, 23.5em 4em, 26.5em 4em, 29.5em 4em, -0.5em 7em, 2.5em 7em, 5.5em 7em, 8.5em 7em, 11.5em 7em, 14.5em 7em, 17.5em 7em, 20.5em 7em, 23.5em 7em, 26.5em 7em, 29.5em 7em, -0.5em 10em, 2.5em 10em, 5.5em 10em, 8.5em 10em, 11.5em 10em, 14.5em 10em, 17.5em 10em, 20.5em 10em, 23.5em 10em, 26.5em 10em, 29.5em 10em, -2em -3.5em, 1em -3.5em, 4em -3.5em, 7em -3.5em, 10em -3.5em, 13em -3.5em, 16em -3.5em, 19em -3.5em, 22em -3.5em, 25em -3.5em, 28em -3.5em, 31em -3.5em, -2em -0.5em, 1em -0.5em, 4em -0.5em, 7em -0.5em, 10em -0.5em, 13em -0.5em, 16em -0.5em, 19em -0.5em, 22em -0.5em, 25em -0.5em, 28em -0.5em, 31em -0.5em, -2em 2.5em, 1em 2.5em, 4em 2.5em, 7em 2.5em, 10em 2.5em, 13em 2.5em, 16em 2.5em, 19em 2.5em, 22em 2.5em, 25em 2.5em, 28em 2.5em, 31em 2.5em, -2em 5.5em, 1em 5.5em, 4em 5.5em, 7em 5.5em, 10em 5.5em, 13em 5.5em, 16em 5.5em, 19em 5.5em, 22em 5.5em, 25em 5.5em, 28em 5.5em, 31em 5.5em, -2em 8.5em, 1em 8.5em, 4em 8.5em, 7em 8.5em, 10em 8.5em, 13em 8.5em, 16em 8.5em, 19em 8.5em, 22em 8.5em, 25em 8.5em, 28em 8.5em, 31em 8.5em, -2em 11.5em, 1em 11.5em, 4em 11.5em, 7em 11.5em, 10em 11.5em, 13em 11.5em, 16em 11.5em, 19em 11.5em, 22em 11.5em, 25em 11.5em, 28em 11.5em, 31em 11.5em;
+  }
+  40%, 50% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 2em, 3em 2em, 5em 2em, 7em 2em, 9em 2em, 11em 2em, 13em 2em, 15em 2em, 17em 2em, 19em 2em, 21em 2em, 1em 4em, 3em 4em, 5em 4em, 7em 4em, 9em 4em, 11em 4em, 13em 4em, 15em 4em, 17em 4em, 19em 4em, 21em 4em, 1em 6em, 3em 6em, 5em 6em, 7em 6em, 9em 6em, 11em 6em, 13em 6em, 15em 6em, 17em 6em, 19em 6em, 21em 6em, 1em 8em, 3em 8em, 5em 8em, 7em 8em, 9em 8em, 11em 8em, 13em 8em, 15em 8em, 17em 8em, 19em 8em, 21em 8em, 0em -1em, 2em -1em, 4em -1em, 6em -1em, 8em -1em, 10em -1em, 12em -1em, 14em -1em, 16em -1em, 18em -1em, 20em -1em, 22em -1em, 0em 1em, 2em 1em, 4em 1em, 6em 1em, 8em 1em, 10em 1em, 12em 1em, 14em 1em, 16em 1em, 18em 1em, 20em 1em, 22em 1em, 0em 3em, 2em 3em, 4em 3em, 6em 3em, 8em 3em, 10em 3em, 12em 3em, 14em 3em, 16em 3em, 18em 3em, 20em 3em, 22em 3em, 0em 5em, 2em 5em, 4em 5em, 6em 5em, 8em 5em, 10em 5em, 12em 5em, 14em 5em, 16em 5em, 18em 5em, 20em 5em, 22em 5em, 0em 7em, 2em 7em, 4em 7em, 6em 7em, 8em 7em, 10em 7em, 12em 7em, 14em 7em, 16em 7em, 18em 7em, 20em 7em, 22em 7em, 0em 9em, 2em 9em, 4em 9em, 6em 9em, 8em 9em, 10em 9em, 12em 9em, 14em 9em, 16em 9em, 18em 9em, 20em 9em, 22em 9em;
+  }
+  50.00001%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes moveVertical {
+  0% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 1em, 3em 1em, 5em 1em, 7em 1em, 9em 1em, 11em 1em, 13em 1em, 15em 1em, 17em 1em, 19em 1em, 21em 1em, 1em 3em, 3em 3em, 5em 3em, 7em 3em, 9em 3em, 11em 3em, 13em 1em, 15em 3em, 17em 3em, 19em 3em, 21em 3em, 1em 5em, 3em 5em, 5em 5em, 7em 5em, 9em 5em, 11em 5em, 13em 5em, 15em 5em, 17em 5em, 19em 5em, 21em 5em, 1em 7em, 3em 7em, 5em 7em, 7em 7em, 9em 7em, 11em 7em, 13em 7em, 15em 7em, 17em 7em, 19em 7em, 21em 7em, 0em 0em, 2em 0em, 4em 0em, 6em 0em, 8em 0em, 10em 0em, 12em 0em, 14em 0em, 16em 0em, 18em 0em, 20em 0em, 22em 0em, 0em 2em, 2em 2em, 4em 2em, 6em 2em, 8em 2em, 10em 2em, 12em 2em, 14em 2em, 16em 2em, 18em 2em, 20em 2em, 22em 2em, 0em 4em, 2em 4em, 4em 4em, 6em 4em, 8em 4em, 10em 4em, 12em 4em, 14em 4em, 16em 4em, 18em 4em, 20em 4em, 22em 4em, 0em 6em, 2em 6em, 4em 6em, 6em 6em, 8em 6em, 10em 6em, 12em 6em, 14em 6em, 16em 6em, 18em 6em, 20em 6em, 22em 6em, 0em 8em, 2em 8em, 4em 8em, 6em 8em, 8em 8em, 10em 8em, 12em 8em, 14em 8em, 16em 8em, 18em 8em, 20em 8em, 22em 8em, 0em 10em, 2em 10em, 4em 10em, 6em 10em, 8em 10em, 10em 10em, 12em 10em, 14em 10em, 16em 10em, 18em 10em, 20em 10em, 22em 10em;
+  }
+  14% {
+    border-radius: 50%;
+    box-shadow: -0.5em -0.5em, 2.5em -0.5em, 5.5em -0.5em, 8.5em -0.5em, 11.5em -0.5em, 14.5em -0.5em, 17.5em -0.5em, 20.5em -0.5em, 23.5em -0.5em, 26.5em -0.5em, 29.5em -0.5em, -0.5em 2.5em, 2.5em 2.5em, 5.5em 2.5em, 8.5em 2.5em, 11.5em 2.5em, 14.5em 2.5em, 17.5em 2.5em, 20.5em 2.5em, 23.5em 2.5em, 26.5em 2.5em, 29.5em 2.5em, -0.5em 5.5em, 2.5em 5.5em, 5.5em 5.5em, 8.5em 5.5em, 11.5em 5.5em, 14.5em 5.5em, 17.5em 5.5em, 20.5em 5.5em, 23.5em 5.5em, 26.5em 5.5em, 29.5em 5.5em, -0.5em 8.5em, 2.5em 8.5em, 5.5em 8.5em, 8.5em 8.5em, 11.5em 8.5em, 14.5em 8.5em, 17.5em 8.5em, 20.5em 8.5em, 23.5em 8.5em, 26.5em 8.5em, 29.5em 8.5em,            -2em -2em, 1em -2em, 4em -2em, 7em -2em, 10em -2em, 13em -2em, 16em -2em, 19em -2em, 22em -2em, 25em -2em, 28em -2em, 31em -2em, -2em 1em, 1em 1em, 4em 1em, 7em 1em, 10em 1em, 13em 1em, 16em 1em, 19em 1em, 22em 1em, 25em 1em, 28em 1em, 31em 1em, -2em 4em, 1em 4em, 4em 4em, 7em 4em, 10em 4em, 13em 4em, 16em 4em, 19em 4em, 22em 4em, 25em 4em, 28em 4em, 31em 4em, -2em 7em, 1em 7em, 4em 7em, 7em 7em, 10em 7em, 13em 7em, 16em 7em, 19em 7em, 22em 7em, 25em 7em, 28em 7em, 31em 7em, -2em 10em, 1em 10em, 4em 10em, 7em 10em, 10em 10em, 13em 10em, 16em 10em, 19em 10em, 22em 10em, 25em 10em, 28em 10em, 31em 10em, -2em 13em, 1em 13em, 4em 13em, 7em 13em, 10em 13em, 13em 13em, 16em 13em, 19em 13em, 22em 13em, 25em 13em, 28em 13em, 31em 13em;
+  }
+  27.5% {
+    border-radius: 50%;
+    box-shadow: -0.5em 1em, 2.5em 1em, 5.5em 1em, 8.5em 1em, 11.5em 1em, 14.5em 1em, 17.5em 1em, 20.5em 1em, 23.5em 1em, 26.5em 1em, 29.5em 1em, -0.5em 4em, 2.5em 4em, 5.5em 4em, 8.5em 4em, 11.5em 4em, 14.5em 4em, 17.5em 4em, 20.5em 4em, 23.5em 4em, 26.5em 4em, 29.5em 4em, -0.5em 7em, 2.5em 7em, 5.5em 7em, 8.5em 7em, 11.5em 7em, 14.5em 7em, 17.5em 7em, 20.5em 7em, 23.5em 7em, 26.5em 7em, 29.5em 7em, -0.5em 10em, 2.5em 10em, 5.5em 10em, 8.5em 10em, 11.5em 10em, 14.5em 10em, 17.5em 10em, 20.5em 10em, 23.5em 10em, 26.5em 10em, 29.5em 10em, -2em -3.5em, 1em -3.5em, 4em -3.5em, 7em -3.5em, 10em -3.5em, 13em -3.5em, 16em -3.5em, 19em -3.5em, 22em -3.5em, 25em -3.5em, 28em -3.5em, 31em -3.5em, -2em -0.5em, 1em -0.5em, 4em -0.5em, 7em -0.5em, 10em -0.5em, 13em -0.5em, 16em -0.5em, 19em -0.5em, 22em -0.5em, 25em -0.5em, 28em -0.5em, 31em -0.5em, -2em 2.5em, 1em 2.5em, 4em 2.5em, 7em 2.5em, 10em 2.5em, 13em 2.5em, 16em 2.5em, 19em 2.5em, 22em 2.5em, 25em 2.5em, 28em 2.5em, 31em 2.5em, -2em 5.5em, 1em 5.5em, 4em 5.5em, 7em 5.5em, 10em 5.5em, 13em 5.5em, 16em 5.5em, 19em 5.5em, 22em 5.5em, 25em 5.5em, 28em 5.5em, 31em 5.5em, -2em 8.5em, 1em 8.5em, 4em 8.5em, 7em 8.5em, 10em 8.5em, 13em 8.5em, 16em 8.5em, 19em 8.5em, 22em 8.5em, 25em 8.5em, 28em 8.5em, 31em 8.5em, -2em 11.5em, 1em 11.5em, 4em 11.5em, 7em 11.5em, 10em 11.5em, 13em 11.5em, 16em 11.5em, 19em 11.5em, 22em 11.5em, 25em 11.5em, 28em 11.5em, 31em 11.5em;
+  }
+  40%, 50% {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: 1em 2em, 3em 2em, 5em 2em, 7em 2em, 9em 2em, 11em 2em, 13em 2em, 15em 2em, 17em 2em, 19em 2em, 21em 2em, 1em 4em, 3em 4em, 5em 4em, 7em 4em, 9em 4em, 11em 4em, 13em 4em, 15em 4em, 17em 4em, 19em 4em, 21em 4em, 1em 6em, 3em 6em, 5em 6em, 7em 6em, 9em 6em, 11em 6em, 13em 6em, 15em 6em, 17em 6em, 19em 6em, 21em 6em, 1em 8em, 3em 8em, 5em 8em, 7em 8em, 9em 8em, 11em 8em, 13em 8em, 15em 8em, 17em 8em, 19em 8em, 21em 8em, 0em -1em, 2em -1em, 4em -1em, 6em -1em, 8em -1em, 10em -1em, 12em -1em, 14em -1em, 16em -1em, 18em -1em, 20em -1em, 22em -1em, 0em 1em, 2em 1em, 4em 1em, 6em 1em, 8em 1em, 10em 1em, 12em 1em, 14em 1em, 16em 1em, 18em 1em, 20em 1em, 22em 1em, 0em 3em, 2em 3em, 4em 3em, 6em 3em, 8em 3em, 10em 3em, 12em 3em, 14em 3em, 16em 3em, 18em 3em, 20em 3em, 22em 3em, 0em 5em, 2em 5em, 4em 5em, 6em 5em, 8em 5em, 10em 5em, 12em 5em, 14em 5em, 16em 5em, 18em 5em, 20em 5em, 22em 5em, 0em 7em, 2em 7em, 4em 7em, 6em 7em, 8em 7em, 10em 7em, 12em 7em, 14em 7em, 16em 7em, 18em 7em, 20em 7em, 22em 7em, 0em 9em, 2em 9em, 4em 9em, 6em 9em, 8em 9em, 10em 9em, 12em 9em, 14em 9em, 16em 9em, 18em 9em, 20em 9em, 22em 9em;
+  }
+  50.00001%, 100% {
+    opacity: 1;
+  }
+}
+.trans::after {
+  background: #74593D;
+  content: "";
+  position: absolute;
+  color: #74593D;
+  top: -1em;
+  left: -1em;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1em 1em, 3em 1em, 5em 1em, 7em 1em, 9em 1em, 11em 1em, 13em 1em, 15em 1em, 17em 1em, 19em 1em, 21em 1em, 1em 3em, 3em 3em, 5em 3em, 7em 3em, 9em 3em, 11em 3em, 13em 3em, 15em 3em, 17em 3em, 19em 3em, 21em 3em, 1em 5em, 3em 5em, 5em 5em, 7em 5em, 9em 5em, 11em 5em, 13em 5em, 15em 5em, 17em 5em, 19em 5em, 21em 5em, 1em 7em, 3em 7em, 5em 7em, 7em 7em, 9em 7em, 11em 7em, 13em 7em, 15em 7em, 17em 7em, 19em 7em, 21em 7em, 1em 9em, 3em 9em, 5em 9em, 7em 9em, 9em 9em, 11em 9em, 13em 9em, 15em 9em, 17em 9em, 19em 9em, 21em 9em,               0em 2em, 2em 2em, 4em 2em, 6em 2em, 8em 2em, 10em 2em, 12em 2em, 14em 2em, 16em 2em, 18em 2em, 20em 2em, 0em 4em, 2em 4em, 4em 4em, 6em 4em, 8em 4em, 10em 4em, 12em 4em, 14em 4em, 16em 4em, 18em 4em, 20em 4em, 0em 6em, 2em 6em, 4em 6em, 6em 6em, 8em 6em, 10em 6em, 12em 6em, 14em 6em, 16em 6em, 18em 6em, 20em 6em, 0em 8em, 2em 8em, 4em 8em, 6em 8em, 8em 8em, 10em 8em, 12em 8em, 14em 8em, 16em 8em, 18em 8em, 20em 8em;
+  -webkit-animation: moveHorizontal 3s infinite;
+          animation: moveHorizontal 3s infinite;
+}
+
+.trans::before {
+  background: #74593D;
+  content: "";
+  position: absolute;
+  color: #DCD9C6;
+  top: -1em;
+  left: -1em;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1em 2em, 3em 2em, 5em 2em, 7em 2em, 9em 2em, 11em 2em, 13em 2em, 15em 2em, 17em 2em, 19em 2em, 21em 2em, 1em 4em, 3em 4em, 5em 4em, 7em 4em, 9em 4em, 11em 4em, 13em 4em, 15em 4em, 17em 4em, 19em 4em, 21em 4em, 1em 6em, 3em 6em, 5em 6em, 7em 6em, 9em 6em, 11em 6em, 13em 6em, 15em 6em, 17em 6em, 19em 6em, 21em 6em, 1em 8em, 3em 8em, 5em 8em, 7em 8em, 9em 8em, 11em 8em, 13em 8em, 15em 8em, 17em 8em, 19em 8em, 21em 8em,                        0em -1em, 2em -1em, 4em -1em, 6em -1em, 8em -1em, 10em -1em, 12em -1em, 14em -1em, 16em -1em, 18em -1em, 20em -1em, 22em -1em, 0em 1em, 2em 1em, 4em 1em, 6em 1em, 8em 1em, 10em 1em, 12em 1em, 14em 1em, 16em 1em, 18em 1em, 20em 1em, 22em 1em, 0em 3em, 2em 3em, 4em 3em, 6em 3em, 8em 3em, 10em 3em, 12em 3em, 14em 3em, 16em 3em, 18em 3em, 20em 3em, 22em 3em, 0em 5em, 2em 5em, 4em 5em, 6em 5em, 8em 5em, 10em 5em, 12em 5em, 14em 5em, 16em 5em, 18em 5em, 20em 5em, 22em 5em, 0em 7em, 2em 7em, 4em 7em, 6em 7em, 8em 7em, 10em 7em, 12em 7em, 14em 7em, 16em 7em, 18em 7em, 20em 7em, 22em 7em, 0em 9em, 2em 9em, 4em 9em, 6em 9em, 8em 9em, 10em 9em, 12em 9em, 14em 9em, 16em 9em, 18em 9em, 20em 9em, 22em 9em;
+  -webkit-animation: moveVertical 23s infinite;
+          animation: moveVertical 23s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 90%;
+    opacity: 1;
+  }
+  50% {
+    top: 88%;
+    opacity: 0.7;
+  }
+  100% {
+    top: 90%;
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 90%;
+    opacity: 1;
+  }
+  50% {
+    top: 88%;
+    opacity: 0.7;
+  }
+  100% {
+    top: 90%;
+    opacity: 1;
+  }
+}
+.resume {
+  position: absolute;
+  top: 90%;
+  left: 78%;
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  transition: 0.5s;
+  -webkit-animation: jump 2s infinite;
+          animation: jump 2s infinite;
+}
+
+.resume:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.map {
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  transition: 0.5s;
+  -webkit-animation: jump 2s infinite;
+          animation: jump 2s infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.map:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.email {
+  position: absolute;
+  top: 90%;
+  left: 92%;
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  transition: 0.5s;
+  -webkit-animation: jump 2s infinite;
+          animation: jump 2s infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.email:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
